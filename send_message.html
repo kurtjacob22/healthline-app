@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>CET-SC</title>
+  </head>
+  <body class="send-message">
+    <div class="checkbox-content">
+      <label class="switch">
+        <input type="checkbox" id="toggle" />
+        <span class="slider round"></span>
+      </label>
+      <span class="anon-option">Anonymous</span>
+    </div>
+    <input type="text" placeholder="Codename:" id="codename" />
+    <input type="text" placeholder="Email:" id="email" />
+    <input type="text" placeholder="Course:" id="course" />
+    <textarea placeholder="Enter your messages/Concerns here" id="message""></textarea>
+    <button class="send" onclick="sendEmail()">Send</button>
+    <script src="./js/toggle.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_GkTQSGJiz26R1kNhQMO1G");
+    })();
+    </script>
+    <!-- <script src="./js/writeToJson.js"></script> -->
+  </body>
+</html>

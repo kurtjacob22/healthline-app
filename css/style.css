@@ -1,0 +1,119 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* CSS FILES */
+@import "./send-message.css";
+/* default */
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: raleway;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+input[type="submit"],
+button {
+  outline: 0;
+  cursor: pointer;
+  border: 0;
+}
+
+input[type="text"],
+input[type="password"]:focus {
+  outline: 1;
+  outline-color: white;
+}
+
+/* CUSTOM CSS */
+
+.landing,
+.send-message {
+  background: url(./assets/plmfac.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.index {
+  display: flex;
+  width: 98vw;
+  height: 90vh;
+  /* margin-top: -10vw; */
+}
+.index-content {
+  margin: auto;
+  /* background-color: blue; */
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+}
+.grt {
+  margin: auto;
+  color: white;
+  /* -webkit-text-stroke: 2px #d5a1062f; */
+  font-family: roboto;
+  font-weight: bold;
+  margin: auto;
+  font-size: 6vw;
+}
+.sub {
+  margin: auto;
+  font-size: 1vw !important;
+  color: rgb(204, 204, 204);
+  letter-spacing: 0.12vw;
+  margin-top: -1.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.date-time {
+  text-align: right;
+  padding-right: 10px;
+  float: right;
+  color: white;
+  font-family: roboto;
+}
+
+.continue {
+  margin: auto;
+  width: 20vw;
+  background-color: #d5a106;
+  border: 0;
+  color: white;
+  height: 30px;
+  /* font-size: 2vh; */
+  transition: 0.4s ease;
+}
+
+.continue:hover {
+  background-color: white;
+  border: 2px solid #d5a106;
+  color: #d5a106;
+}
+
+@media only screen and (max-width: 768px) {
+  .grt {
+    font-size: 20vw;
+  }
+  .continue {
+    width: 65vw;
+  }
+  .sub {
+    font-size: 3.8vw !important;
+  }
+}
