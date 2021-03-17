@@ -4,12 +4,12 @@ let cdname = document.querySelector("#codename");
 let em = document.querySelector("#email");
 let crs = document.querySelector("#course");
 let msg = document.querySelector("#message");
-let codename, email, course, message;
 
 chkBoxToggle.addEventListener("change", () => {
   if (chkBoxToggle.checked) {
     anonText.style.color = "#d5a106";
     em.style.display = "none";
+    em.value = "";
   } else {
     anonText.style.color = "white";
     em.style.display = "";
@@ -26,6 +26,10 @@ const sendEmail = () => {
   };
 
   emailjs.send("service_mf97w4n", "template_n003jf8", userInfo).then((res) => {
-    console.log("success", res.status);
+    alert("message sent", res.status);
+    em.value = "";
+    cdname.value = "";
+    crs.value = "";
+    msg.value = "";
   });
 };
