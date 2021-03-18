@@ -113,8 +113,13 @@ textarea {
   color: #d5a106;
 }
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   textarea {
     height: 50vh;
   }
-} */
+  input[type="text"],
+  textarea,
+  .send {
+    width: 80vw !important;
+  }
+}
