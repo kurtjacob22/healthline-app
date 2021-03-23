@@ -125,6 +125,14 @@ textarea {
   color: #d5a106;
 }
 
+.sub-txt {
+  color: white;
+  font-size: 2vw;
+  letter-spacing: 5px;
+  margin: 10px;
+  margin-top: -20px;
+}
+
 @media only screen and (max-width: 768px) {
   textarea {
     height: 50vh;
@@ -135,11 +143,15 @@ textarea {
     width: 80vw !important;
   }
   .txt {
-    color: white;
     font-size: 10vw;
-    font-family: roboto;
     font-weight: 100;
     text-align: center;
     padding: 20px;
+  }
+  .sub-txt {
+    font-size: 4vw;
+    text-align: Center;
+    letter-spacing: 0;
+    padding-bottom: 10px;
   }
 }
