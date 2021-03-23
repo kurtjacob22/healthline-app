@@ -113,6 +113,18 @@ textarea {
   color: #d5a106;
 }
 
+.txt {
+  color: white;
+  font-size: 5vw;
+  font-family: roboto;
+  font-weight: 100;
+}
+
+.bld {
+  font-weight: bold;
+  color: #d5a106;
+}
+
 @media only screen and (max-width: 768px) {
   textarea {
     height: 50vh;
@@ -121,5 +133,13 @@ textarea {
   textarea,
   .send {
     width: 80vw !important;
+  }
+  .txt {
+    color: white;
+    font-size: 10vw;
+    font-family: roboto;
+    font-weight: 100;
+    text-align: center;
+    padding: 20px;
   }
 }
