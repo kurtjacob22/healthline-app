@@ -8,13 +8,11 @@ let msg = document.querySelector("#message");
 chkBoxToggle.addEventListener("change", () => {
   if (chkBoxToggle.checked) {
     anonText.style.color = "#d5a106";
-    // em.style.display = "none";
-    em.disabled = true;
+    em.style.display = "none";
     em.value = "";
   } else {
     anonText.style.color = "white";
     em.style.display = "";
-    em.disabled = false;
   }
 });
 
