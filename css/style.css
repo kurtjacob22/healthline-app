@@ -44,10 +44,10 @@ input[type="password"]:focus {
 
 .landing,
 .send-message {
-  background: url(./assets/plmfac.jfif);
+  background: url(./assets/plmfac.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
 }
 
 .index {
