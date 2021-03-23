@@ -44,7 +44,7 @@ input[type="password"]:focus {
 
 .landing,
 .send-message {
-  background: url(./assets/plmfac.png);
+  background: url(./assets/cet-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
